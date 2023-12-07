@@ -5,6 +5,23 @@ jQuery( document ).ready(function( $ ) {
             $( "#tabs" ).tabs();
         });
 
+    /*=============== LOADER ===============*/
+    document.addEventListener('DOMContentLoaded', function (eventObject) {
+        $('.load').fadeIn();
+    })
+    window.addEventListener("load", function (eventObject) {
+        $('.load').fadeOut("slow");
+    });
+
+    /*=============== SHOW SCROLL UP ===============*/
+    const scrollUp = () => {
+        const scrollUp = document.getElementById('scroll-up')
+        // When the scroll is higher than 300 viewport height, add the show-scroll class to the a tag with the scrollup class
+        this.scrollY >= 300 ? scrollUp.classList.add('show-scroll')
+            : scrollUp.classList.remove('show-scroll')
+    }
+    window.addEventListener('scroll', scrollUp)
+
         // Page loading animation
 
         $("#preloader").animate({

@@ -1,8 +1,4 @@
-/* 
-
-TemplateMo - Finance Business
-
-https://templatemo.com/tm-545-finance-business
+/*
 
 */
 
@@ -30,6 +26,26 @@ ul {
 
 h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
+}
+
+/* ==================== LOADER | Omonjon ==================== */
+.load {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: auto 0;
+	background-color: var(--bs-white);
+	display: grid;
+	place-items: center;
+	z-index: 100;
+}
+
+.load .load-gif {
+	max-width: 500px;
+	width: 100%;
+	height: 100%;
 }
 
 a.filled-button {
@@ -1223,13 +1239,50 @@ footer .contact-form button.filled-button:hover {
 	font-size: 15px;
 }
 
+/*=============== PARTICLES | Omonjon ===============*/
+#particles-js{
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	background-image: url('#');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
 
+/*=============== SCROLL UP | Omonjon ===============*/
+.scroll_up {
+	position: fixed;
+	right: 3.5rem;
+	bottom: -100%;
+	background-color: red;
+	display: inline-flex;
+	padding: .35rem;
+	border-radius: .25rem;
+	font-size: 1.1rem;
+	color: var(--bs-white);
+	z-index: 10;
+	transition: bottom .4s, transform .4s, background-color .4s;
+}
 
+.scroll_up:hover {
+	transform: translateY(-.35rem);
+	background-color: var(--bs-white);
+	color: black;
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+	bottom: 4rem;
+}
 
 /* Responsive Style */
 @media (max-width: 768px) {
 	.sub-header {
 		display: none;
+	}
+	.scroll_up {
+		right: 1rem;
 	}
 	.Modern-Slider .item h6 {
 	  margin-bottom: 15px;
