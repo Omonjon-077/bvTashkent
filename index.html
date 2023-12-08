@@ -10,24 +10,61 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
           rel="stylesheet">
 
-    <title>Bureau Veritas</title>
+    <title>Bureau veritas</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/boxicons.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+    <!--
+
+    Finance Business TemplateMo
+
+    https://templatemo.com/tm-545-finance-business
+
+    -->
 </head>
 
 <body>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title fs-5" id="exampleModalLabel">Menu</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="nav-menu d-flex flex-column align-items-center row-gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- ***** Preloader Start ***** -->
-<div class="load" id="load">
-    <lottie-player autoplay loop mode="normal" src="assets/jsons/loader.json" class="load-gif">
-    </lottie-player>
+<div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </div>
 <!-- ***** Preloader End ***** -->
 
@@ -56,29 +93,25 @@
 <header class="">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><h2>Bureau Veritas</h2></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="fs-3 text-white text-uppercase fw-bold" href="index.html"><h2>Finance Business</h2></a>
+            <button type="button"
+                    class="btn-outline-light d-block d-lg-none z-index-1 border-0 ms-auto d-flex align-items-center bg-transparent"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                    class='bx bx-menu bx-sm text-secondary'></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#top">Home
-                            <span class="sr-only d-none">(current)</span>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link current" href="#top">Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="#services">Our Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Our Services</a>
+                        <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="one-page.html">One Page</a>
+                        <a class="nav-link" href="#contactus">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -96,9 +129,9 @@
                 <div class="text-content">
                     <h6>we are ready to help you</h6>
                     <h4>Financial Analysis<br>&amp; Consulting</h4>
-                    <p>This finance HTML template is 100% free of charge provided by TemplateMo for everyone. This is a
-                        multiple-page version with different HTML pages. <a href="one-page.html">One-page version</a> is
-                        available as of 2021 February.</p>
+                    <p>This finance HTML template is 100% free of charge provided by TemplateMo. This is one-page
+                        version added in 2021 February. <a href="index.html">Multiple-page version</a> with different
+                        HTML pages are also available.</p>
                     <a href="contact.html" class="filled-button">contact us</a>
                 </div>
             </div>
@@ -124,8 +157,8 @@
                 <div class="text-content">
                     <h6>we have a solid background</h6>
                     <h4>Market Analysis<br>&amp; Statistics</h4>
-                    <p>You can download, edit and use this layout for your business website. Phasellus lacinia ac sapien
-                        vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
+                    <p>You can download, edit and use this finance business layout for your commercial websites. You
+                        just need to put class="external" if you wish to link to external URLs in the main menu.</p>
                     <a href="about.html" class="filled-button">learn more</a>
                 </div>
             </div>
@@ -149,7 +182,7 @@
     </div>
 </div>
 
-<div class="services">
+<div class="services" id="services">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -241,7 +274,7 @@
     </div>
 </div>
 
-<div class="more-info">
+<div class="more-info" id="about">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -328,7 +361,8 @@
         </div>
     </div>
 </div>
-<div class="callback-form">
+
+<div class="callback-form" id="contactus">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -416,7 +450,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 footer-item">
-                <h4>Bureau Veritas</h4>
+                <h4>Finance Business</h4>
                 <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien
                     vitae.</p>
                 <ul class="social-icons">
@@ -487,7 +521,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p>Copyright &copy; 2023 Bureau Veritas Co., Ltd.</p>
+                <p>Copyright &copy; 2023 Bureau veritas Co., Ltd.</p>
             </div>
         </div>
     </div>
@@ -503,12 +537,25 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Additional Scripts -->
-<script src="assets/js/lottie-player.js"></script>
+<script src="assets/js/jquery.singlePageNav.min.js"></script>
+<script src="assets/js/custom.js"></script>
 <script src="assets/js/owl.js"></script>
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/accordions.js"></script>
-<script src="assets/js/custom.js"></script>
+<script>
+    $(function () {
+        // Single Page Nav
+        $('#navbarResponsive').singlePageNav({
+            'offset': 100,
+            'filter': ':not(.external)'
+        });
 
+        // On mobile, close the menu after nav-link click
+        $('#navbarResponsive .navbar-nav .nav-item .nav-link').click(function () {
+            $('#navbarResponsive').removeClass('show');
+        });
+    });
+</script>
 <script language="text/Javascript">
     cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
     function clearField(t) {                   //declaring the array outside of the
@@ -519,6 +566,5 @@
         }
     }
 </script>
-
 </body>
 </html>
