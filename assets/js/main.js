@@ -37,7 +37,7 @@ const linkAction = () => {
 /*=============== TELEGRAM BOT ===============*/
 let form = document.querySelector("#contact-form");
 let contactName = document.querySelector("#contact-name");
-let contactText = document.querySelector("#contact-text");
+// let contactText = document.querySelector("#contact-text");
 
 // FOR INPUT MASK
 const contactPhone = document.getElementById('contact-phone');
@@ -60,9 +60,8 @@ form.addEventListener("submit", (e) => {
 
     let name = document.getElementById("contact-name").value;
     let phone = document.getElementById("contact-phone").value;
-    let text = document.getElementById("contact-text").value;
 
-    let sendMessage = `Mijoz %0A Ismi: ${name} %0A Telefon raqami: ${phone} %0A Xabari: ${text}`
+    let sendMessage = `Mijoz %0A Ismi: ${name} %0A Telefon raqami: ${phone}`
 
     fetch(`https://api.telegram.org/bot$6595201002:AAEhyP9yPVomWKZNO9xHzjyZOpeoNqGomO4/sendMessage?chat_id=$-1001996063027&text=${sendMessage}`, {
         method: "GET"
@@ -70,7 +69,7 @@ form.addEventListener("submit", (e) => {
         .then(success => {
             contactName.value = "";
             contactPhone.value = "";
-            contactText.value = "";
+            // contactText.value = "";
         }, error => {
             alert("Message not send!");
             contactName.value = "";

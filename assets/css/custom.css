@@ -511,7 +511,7 @@ header .navbar {
 }
 
 .background-header .text-white{
-    color: var(--bs-secondary) !important;
+    color: var(--bs-primary) !important;
 }
 
 .background-header {

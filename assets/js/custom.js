@@ -135,5 +135,4 @@ jQuery(document).ready(function ($) {
             });
         }
     })
-
 });
