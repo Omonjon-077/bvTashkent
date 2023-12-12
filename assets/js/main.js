@@ -37,16 +37,9 @@ const linkAction = () => {
 /*=============== TELEGRAM BOT ===============*/
 let form = document.querySelector("#contact-form");
 let contactName = document.querySelector("#contact-name");
-// let contactText = document.querySelector("#contact-text");
-
-// FOR INPUT MASK
-const contactPhone = document.getElementById('contact-phone');
-const maskOptions = {
-    mask: '+{998}(00)000-00-00'
-};
-const mask = IMask(contactPhone, maskOptions);
-
-// FOR INPUT MASK
+let contactPhone = document.querySelector("#contact-phone");
+let contactTheme = document.querySelector("#contact-theme");
+let contactText = document.querySelector("#contact-text");
 
 // FOR SEND BOT
 let bot = {
@@ -57,22 +50,26 @@ let bot = {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-
     let name = document.getElementById("contact-name").value;
     let phone = document.getElementById("contact-phone").value;
+    let theme = document.getElementById("contact-phone").value;
+    let text = document.getElementById("contact-phone").value;
 
-    let sendMessage = `Mijoz %0A Ismi: ${name} %0A Telefon raqami: ${phone}`
+    let sendMessage = `Mijoz %0A Ismi: ${name} %0A Telefon raqami: ${phone} %0A Mavzusi: ${theme} %0A Xabari: ${text}`
 
-    fetch(`https://api.telegram.org/bot$6595201002:AAEhyP9yPVomWKZNO9xHzjyZOpeoNqGomO4/sendMessage?chat_id=$-1001996063027&text=${sendMessage}`, {
+    fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${sendMessage}`, {
         method: "GET"
     })
         .then(success => {
             contactName.value = "";
             contactPhone.value = "";
-            // contactText.value = "";
+            contactTheme.value = "";
+            contactText.value = "";
         }, error => {
             alert("Message not send!");
             contactName.value = "";
             contactPhone.value = "";
+            contactTheme.value = "";
+            contactText.value = "";
         })
 })
