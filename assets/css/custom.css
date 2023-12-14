@@ -1,6 +1,6 @@
 /**/
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -128,10 +128,6 @@ input[type=number] {
 
 .bg-gray {
     background-color: #131720 !important;
-}
-
-.primary-shadow {
-    box-shadow: var(--primary-shadow);
 }
 
 .self-absolute {
@@ -510,7 +506,7 @@ header .navbar {
     padding: 10px 0px;
 }
 
-.background-header .text-white{
+.background-header .text-white {
     color: var(--bs-primary) !important;
 }
 
@@ -906,6 +902,27 @@ ul.slick-dots {
 .service-item .down-content {
     background-color: #f7f7f7;
     padding: 15px;
+}
+
+.accordion-button:focus {
+    box-shadow: initial;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
 }
 
 .service-item .down-content h4 {
