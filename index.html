@@ -17,10 +17,11 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
-    <link rel="stylesheet" href="assets/css/custom.css?v=0.2">
     <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/custom.css?v=0.3">
     <!--
 
     Finance Business TemplateMo
@@ -96,7 +97,8 @@
 <header class="">
     <nav class="navbar navbar-expand-lg bg-white">
         <div class="container">
-            <a class="fs-3 text-white text-uppercase fw-bold d-flex align-items-center" href="index.html"><img class="" style="height: 100px"
+            <a class="fs-3 text-white text-uppercase fw-bold d-flex align-items-center" href="index.html"><img class=""
+                                                                                                               style="height: 100px"
                                                                                                                src="assets/images/site-logo.png"
                                                                                                                alt="">
                 <h2 class="d-none">Bureau veritas</h2></a>
@@ -191,91 +193,101 @@
     </div>
 </div>
 
-<section id="services" class="py-5">
+<section id="services" class="pt-3 pt-sm-5">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading mb-5">
                     <h2>УСЛУГИ ДЕПАРТАМЕНТА <em>СЕРТИФИКАЦИИ</em></h2>
+                    <span class="">БОЛЕЕ 170,000 ВЫДАННЫХ ДЕЙСТВУЩИХ  СЕРТИФИКАТОВ</span>
                 </div>
             </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed fs-5 text-black fw-bold" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                            Услуга #1
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p class="text-black fs-5 text-primary] fw-normal">Сертификация систем менеджмента</p>
+            <div class="col-md-6 d-none d-md-block">
+                <div class="d-flex">
+                    <img src="assets/images/sertifikat.jpg" class="img-fluid w-100" style="height: 360px" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="accordion accordion-flush d-flex flex-column row-gap-3" id="accordionFlushExample">
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button rounded-2 text-white fs-7 fw-bold collapsed bg-gray box-shadow-none"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                Услуга #1 <i
+                                    class="bx bx-chevron-down ms-auto p-1 bg-dark rounded-circle transition"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne"
+                             class="accordion-collapse accordion-collapse rounded-2 bg-gray collapse"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white opacity-7 fs-7 ">Сертификация систем менеджмента</div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                            Услуга #2
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p class="text-black fs-5 text-primary] fw-normal">Устойчивое развитие и корпоративная
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button rounded-2 text-white fs-7 fw-bold collapsed bg-gray box-shadow-none"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Услуга #2 <i
+                                    class="bx bx-chevron-down ms-auto p-1 bg-dark rounded-circle transition"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo"
+                             class="accordion-collapse accordion-collapse rounded-2 bg-gray collapse"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white opacity-7 fs-7">Устойчивое развитие и корпоративная
                                 социальная ответственность
-                            </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                            Услуга #3
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p class="text-black fs-5 text-primary] fw-normal">Аудиты на основе специфических
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button rounded-2 text-white fs-7 fw-bold collapsed bg-gray box-shadow-none"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                Услуга #3 <i
+                                    class="bx bx-chevron-down ms-auto p-1 bg-dark rounded-circle transition"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree"
+                             class="accordion-collapse accordion-collapse rounded-2 bg-gray bg-gray collapse"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white opacity-7 fs-7">Аудиты на основе специфических
                                 стандартов клиентов
-                            </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                aria-controls="flush-collapseFour">
-                            Услуга #4
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse"
-                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p class="text-black fs-5 text-primary] fw-normal">Отраслевые решения</p>
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button rounded-2 text-white fs-7 fw-bold collapsed bg-gray box-shadow-none"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                    aria-expanded="false" aria-controls="flush-collapseFour">
+                                Услуга #4 <i
+                                    class="bx bx-chevron-down ms-auto p-1 bg-dark rounded-circle transition"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour"
+                             class="accordion-collapse accordion-collapse rounded-2 bg-gray bg-gray collapse"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white opacity-7 fs-7">Отраслевые решения</div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFive" aria-expanded="false"
-                                aria-controls="flush-collapseFive">
-                            Услуга #5
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse"
-                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p class="text-black fs-5 text-primary] fw-normal">Обучение в области Систем Менеджмента</p>
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button rounded-2 text-white fs-7 fw-bold collapsed bg-gray box-shadow-none"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                    aria-expanded="false" aria-controls="flush-collapseFive">
+                                Услуга #5 <i
+                                    class="bx bx-chevron-down ms-auto p-1 bg-dark rounded-circle transition"></i>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive"
+                             class="accordion-collapse accordion-collapse rounded-2 bg-gray bg-gray collapse"
+                             data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white opacity-7 fs-7">Обучение в области Систем
+                                Менеджмента
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -386,10 +398,68 @@
                         <br>
                         • Начало нового цикла сертификации
                     </p>
-                    <a href="#!" class="filled-button">Узнать больше</a>
+                    <a href="#!" class="filled-button d-none">Узнать больше</a>
                 </div>
             </div>
-            <div class="col-md-6 align-self-center">
+
+            <div class="col-md-6">
+                <h5 class="text-center fs-3 text-white text-uppercase fw-bold">Сотрудники BUREAU VERITAS – наша основная
+                    <em>ценность</em></h5>
+                <div class="row row-gap-3 mt-5">
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column">
+                            <h5 class="fs-5 text-center text-md-start text-primary fw-bold text-uppercase mb-2">
+                                Соблюдение
+                                этики</h5>
+                            <p class="fs-7 text-center text-md-start fw-normal text-white">
+                                Значимость соблюдения Кодекса
+                                профессиональной этики
+                                Избегание любых нарушений этических норм <br>
+                                При необходимости принятие корректирующих действий
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column">
+                            <h5 class="fs-5 text-center text-md-start text-primary fw-bold text-uppercase mb-2">
+                                Лояльность клиентов
+                            </h5>
+                            <p class="fs-7 text-center text-md-start fw-normal text-white">
+                                Постоянное повышение качества наших услуг <br>
+                                Измерение и управление удовлетворенностью клиента <br>
+                                Демонстрация соответствия нормам
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column">
+                            <h5 class="fs-5 text-center text-md-start text-primary fw-bold text-uppercase mb-2">
+                                Безопасность
+                                на рабочем месте
+                            </h5>
+                            <p class="fs-7 text-center text-md-start fw-normal text-white">
+                                Обеспечение сотрудников безопасной и здоровой рабочей средой <br>
+                                Усиление политики по тренингам и осведомленности для оценки рисков
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column">
+                            <h5 class="fs-5 text-center text-md-start text-primary fw-bold text-uppercase mb-2">
+                                Продвижение
+                                талантов
+                            </h5>
+                            <p class="fs-7 text-center text-md-start fw-normal text-white">
+                                Развитие талантов <br>
+                                Привлечение новых талантов <br>
+                                Внутренняя мобильность и управление карьерой br
+                                Разнообразие и равные возможности
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 align-self-center d-none">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="count-area-content">
@@ -421,6 +491,87 @@
     </div>
 </div>
 
+<section class="liders pt-3 pt-md-5">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Лидирующие позиции по направлениям деятельности <em>BUREAU VERITAS</em></h2>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="text-primary fs-3 fw-bold text-center">Морской сектор</h5>
+                        <p class="fs-5 text-black fw-normal text-center">Вторые в мире по количеству судов, шестые в
+                            мире по тоннажам</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="text-primary fs-3 fw-bold text-center">Промышленность</h5>
+                        <p class="fs-5 text-black fw-normal text-center">В тройке мировых лидеров</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="text-primary fs-3 fw-bold text-center">Пожарная безопасность</h5>
+                        <p class="fs-5 text-black fw-normal text-center">В тройке мировых лидеров</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="text-primary fs-3 fw-bold text-center">Охрана труда и окружающей среды</h5>
+                        <p class="fs-5 text-black fw-normal text-center">Четвертые в мире</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="text-primary fs-3 fw-bold text-center">Строительство</h5>
+                        <p class="fs-5 text-black fw-normal text-center">Мировые лидеры</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="text-primary fs-3 fw-bold text-center">Сертификация</h5>
+                        <p class="fs-5 text-black fw-normal text-center">Мировые лидеры</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="text-primary fs-3 fw-bold text-center">Потребительские товары</h5>
+                        <p class="fs-5 text-black fw-normal text-center">Мировые лидеры в области сертификации игрушек,
+                            вторые по текстильной продукции
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="text-primary fs-3 fw-bold text-center">Международная торговля и правительственные
+                            контракты</h5>
+                        <p class="fs-5 text-black fw-normal text-center">Входим в четверку по правительственным
+                            контрактам, занимаем позиции в международной торговле
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h5 class="text-primary fs-3 fw-bold text-center">Инспекции и Лабораторные исследования</h5>
+                        <p class="fs-5 text-black fw-normal text-center">Одна из крупнейших независимых сюрвейерских
+                            компаний (12 лабораторий, более 1 200 сотрудников)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next">
+                <i class='bx bx-chevron-right bx-lg'></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class='bx bx-chevron-left bx-lg'></i>
+            </div>
+            <div class="swiper-pagination position-static mt-4"></div>
+        </div>
+    </div>
+</section>
+
 <div class="more-info" id="about">
     <div class="container">
         <div class="row">
@@ -436,15 +587,11 @@
                             <div class="right-content">
                                 <span>Приоритеты компании</span>
                                 <h2>Сотрудники BUREAU VERITAS – <em>наша основная ценность</em></h2>
-                                <p>Соблюдение этики Значимость соблюдения Кодекса профессиональной этики
-                                    Избегание любых нарушений этических норм
-                                    При необходимости принятие корректирующих действий
+                                <p>ФОРМИРУЕМ МИР
+                                    ВСЕОБЩЕГО ДОВЕРИЯ
                                     <br>
-                                    Лояльность клиентов
-                                    Постоянное повышение качества наших услуг
-                                    Измерение и управление удовлетворенностью клиента
-                                    Демонстрация соответствия нормам
-
+                                    МИРОВОЙ ЛИДЕР В ОБЛАСТИ ИСПЫТАНИЙ,
+                                    ИНСПЕКЦИЙ И СЕРТИФИКАЦИИ
                                 </p>
                                 <a href="#" class="filled-button d-none">Read More</a>
                             </div>
@@ -525,35 +672,36 @@
             </div>
             <div class="col-md-12">
                 <div class="contact-form">
-                    <form id="contact" action="" method="post">
+                    <form id="contact-form" action="" method="post">
                         <div class="row">
                             <div class="col-lg-4 col-md-12 col-sm-12">
                                 <fieldset>
-                                    <input name="name" type="text" class="form-control" id=""
+                                    <input name="name" type="text" class="form-control" id="contact-name"
                                            placeholder="Полное имя" required="">
                                 </fieldset>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12">
                                 <fieldset>
-                                    <input name="phone" type="text" class="form-control" id=""
+                                    <input name="phone" type="text" class="form-control" id="contact-phone"
                                            placeholder="Номер телефона" required="">
                                 </fieldset>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12">
                                 <fieldset>
-                                    <input name="subject" type="text" class="form-control" id=""
+                                    <input name="subject" type="text" class="form-control" id="contact-theme"
                                            placeholder="Тема" required="">
                                 </fieldset>
                             </div>
                             <div class="col-lg-12">
                                 <fieldset>
-                                    <textarea name="message" rows="6" class="form-control" id=""
+                                    <textarea name="message" rows="6" class="form-control" id="contact-text"
                                               placeholder="Ваше сообщение" required=""></textarea>
                                 </fieldset>
                             </div>
                             <div class="col-lg-12">
                                 <fieldset>
-                                    <button type="submit" id="" class="border-button">Отправить сообщение</button>
+                                    <button type="submit" id="contact-btn" class="border-button">Отправить сообщение
+                                    </button>
                                 </fieldset>
                             </div>
                         </div>
@@ -690,12 +838,14 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Additional Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/jquery.singlePageNav.min.js"></script>
-<script src="assets/js/custom.js"></script>
 <script src="https://unpkg.com/imask"></script>
 <script src="assets/js/owl.js"></script>
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/accordions.js"></script>
+<script src="assets/js/main.js?v=0.1"></script>
+<script src="assets/js/custom.js?v=0.1"></script>
 <script>
     $(function () {
         // Single Page Nav

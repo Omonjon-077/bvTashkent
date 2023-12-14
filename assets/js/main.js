@@ -7,32 +7,17 @@ const scrollUp = () => {
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== Header Fixed ===============*/
-if ($("#myHeader").length) {
-    window.onscroll = function () {
-        myFunction()
-    };
-
-    let header = document.getElementById("myHeader");
-    let sticky = header.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    }
-}
-
-/*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll('.nav__link')
-
-const linkAction = () => {
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
-}
+/*=============== SWIPER ===============*/
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 
 /*=============== TELEGRAM BOT ===============*/
 let form = document.querySelector("#contact-form");
@@ -52,8 +37,8 @@ form.addEventListener("submit", (e) => {
 
     let name = document.getElementById("contact-name").value;
     let phone = document.getElementById("contact-phone").value;
-    let theme = document.getElementById("contact-phone").value;
-    let text = document.getElementById("contact-phone").value;
+    let theme = document.getElementById("contact-theme").value;
+    let text = document.getElementById("contact-text").value;
 
     let sendMessage = `Mijoz %0A Ismi: ${name} %0A Telefon raqami: ${phone} %0A Mavzusi: ${theme} %0A Xabari: ${text}`
 
