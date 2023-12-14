@@ -734,7 +734,7 @@ ul.slick-dots {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-    color: var(--bs-primary);
+    color: var(--bs-secondary);
     animation: fadeOutRight 1s both;
 }
 
@@ -905,7 +905,7 @@ ul.slick-dots {
 
 .service-item .down-content {
     background-color: #f7f7f7;
-    padding: 30px;
+    padding: 15px;
 }
 
 .service-item .down-content h4 {
