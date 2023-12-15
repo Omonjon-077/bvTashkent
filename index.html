@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/custom.css?v=0.3">
+    <link rel="stylesheet" href="assets/css/custom.css?v=0.4">
     <!--
 
     Finance Business TemplateMo
@@ -32,6 +32,21 @@
 </head>
 
 <body>
+<!-- Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="./assets/images/favicon.png" class="rounded me-2" style="width: 25px;height: 25px;" alt="">
+            <strong class="me-auto">BUREAU VERITAS</strong>
+            <small>Сейчас</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Ваше сообщение отправлено и с вами свяжутся в ближайшее время
+        </div>
+    </div>
+</div>
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
@@ -155,7 +170,6 @@
                         поставщика услуг. По этой причине соблюдение этики во время исполнения наших должностных
                         обязанностей должно быть каждодневной задачей работника
                     </p>
-                    <a href="#services" class="filled-button d-none">Наши услуги</a>
                 </div>
             </div>
         </div>
@@ -565,7 +579,14 @@
                                     МИРОВОЙ ЛИДЕР В ОБЛАСТИ ИСПЫТАНИЙ,
                                     ИНСПЕКЦИЙ И СЕРТИФИКАЦИИ
                                 </p>
-                                <a href="#" class="filled-button d-none">Read More</a>
+                                <div class="d-flex align-items-center justify-content-center justify-content-sm-between mb-3 flex-wrap row-gap-3">
+                                    <h6 class="text-primary fs-8 fw-bold me-3">Политика Беспристрастности:</h6>
+                                    <a href="assets/download/Политика_Беспристрастности.pdf" target="_blank" class="bg-primary fs-8 py-2 px-3 d-flex text-white align-items-center column-gap-2 rounded-5"><i class='bx text-white bx-download fs-6'></i>Скачать PDF</a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center justify-content-sm-between flex-wrap row-gap-3">
+                                    <h6 class="text-primary fs-8 fw-bold me-3">Политика в области качества:</h6>
+                                    <a href="assets/download/Политика_в_области_качества.pdf" target="_blank" class="bg-primary fs-8 py-2 px-3 d-flex text-white align-items-center column-gap-2 rounded-5"><i class='bx text-white bx-download fs-6'></i>Скачать PDF</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -576,12 +597,79 @@
 </section>
 
 <section class="">
-
+    <div class="container">
+        <div class="section-heading mb-4">
+            <h2>ТРЕНИНГИ</h2>
+        </div>
+        <div class="row row-gap-3">
+            <div class="col-md-3">
+                <div class="shadow-card transition d-flex flex-column align-items-center h-100 border-1 border rounded-4 border-secondary py-3">
+                    <h4 class="fs-6 fw-bold text-uppercase text-secondary mb-2">РЫНКИ</h4>
+                    <ul class="list-group list-group-flush w-100 px-3">
+                        <li class="fs-8 text-black fw-normal list-group-item">Качество</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Экология</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Охрана труда</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Пищевая безопасность</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Энергоменеджмент</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Авиация</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Информационная безопасность</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="shadow-card transition d-flex flex-column align-items-center border-1 border rounded-4 border-secondary py-3 h-100">
+                    <h4 class="fs-6 fw-bold text-uppercase text-secondary mb-2">ЦЕЛЕВАЯ АУДИТОРИЯ</h4>
+                    <ul class="list-group list-group-flush w-100 px-3">
+                        <li class="fs-8 text-black fw-normal list-group-item">Персонал</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Студенты</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Менеджеры</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Топ-менеджмент</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Специалисты</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Аудиторы</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="shadow-card transition d-flex flex-column align-items-center border-1 border rounded-4 border-secondary py-3 h-100">
+                    <h4 class="fs-6 fw-bold text-uppercase text-secondary mb-2">ВИДЫ ТРЕНИНГОВ</h4>
+                    <ul class="list-group list-group-flush w-100 px-3">
+                        <li class="fs-8 text-black fw-normal list-group-item">Корпоративные</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Открытые курсы</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">IRCA</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Онлайн курсы</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="shadow-card transition d-flex flex-column align-items-center border-1 border rounded-4 border-secondary py-3 h-100">
+                    <h4 class="fs-6 fw-bold text-uppercase text-secondary mb-2">УРОВНИ</h4>
+                    <ul class="list-group list-group-flush w-100 px-3">
+                        <li class="fs-8 text-black fw-normal list-group-item">Для руководства</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Обзор стандартов</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Внутренний аудит</li>
+                        <li class="fs-8 text-black fw-normal list-group-item">Специализация</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="fs-8 text-gray fw-light">
+                Мы предлагаем широкий спектр открытых и корпоративных семинаров
+                ПО:
+                международным стандартам в области систем менеджмента
+                отраслевым стандартам
+                корпоративным стандартам
+            </p>
+            <p class="fs-8 text-black fw-light">
+                “Мы готовы разработать и провести курсы
+                в соответствии с Вашими потребностями и
+                по интересующей Вас тематике”
+            </p>
+        </div>
+    </div>
 </section>
 
 <section class="mt-3 mt-5" style="background: #f7f7f7">
     <div class="container">
-        <div class="section-heading pb-0 mb-0 pt-3">
+        <div class="section-heading pb-0 mb-0 pt-4">
             <h2>ГЛОБАЛЬНАЯ СЕТЬ РЕСУРСОВ <em>BUREAU VERITAS</em></h2>
             <span>В штате более 6 500 аудиторов в 140 странах мира + более 20 000 возможных совместителей</span>
         </div>
@@ -879,7 +967,7 @@
 <script src="assets/js/owl.js"></script>
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/accordions.js"></script>
-<script src="assets/js/main.js?v=0.1"></script>
+<script src="assets/js/main.js?v=0.2"></script>
 <script src="assets/js/custom.js?v=0.1"></script>
 <script>
     $(function () {

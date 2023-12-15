@@ -25,6 +25,7 @@ let contactName = document.querySelector("#contact-name");
 let contactPhone = document.querySelector("#contact-phone");
 let contactTheme = document.querySelector("#contact-theme");
 let contactText = document.querySelector("#contact-text");
+let toast = document.querySelector(".toast");
 
 // FOR SEND BOT
 let bot = {
@@ -50,8 +51,12 @@ form.addEventListener("submit", (e) => {
             contactPhone.value = "";
             contactTheme.value = "";
             contactText.value = "";
+            toast.classList.add("show");
+            setTimeout(function(){
+                toast.classList.remove("show");
+            }, 3000);
         }, error => {
-            alert("Message not send!");
+            alert("Ваше сообщение не было отправлено");
             contactName.value = "";
             contactPhone.value = "";
             contactTheme.value = "";
