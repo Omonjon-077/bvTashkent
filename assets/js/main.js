@@ -54,7 +54,7 @@ form.addEventListener("submit", (e) => {
             toast.classList.add("show");
             setTimeout(function(){
                 toast.classList.remove("show");
-            }, 3000);
+            }, 5000);
         }, error => {
             alert("Ваше сообщение не было отправлено");
             contactName.value = "";
