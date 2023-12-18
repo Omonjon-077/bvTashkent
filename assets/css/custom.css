@@ -1159,19 +1159,19 @@ button[aria-expanded^="true"] i {
     height: 40px;
     line-height: 40px;
     display: inline-block;
-    padding: 0px 15px;
+    padding: 0 13px;
     color: #6a6a6a;
     font-size: 13px;
     text-transform: none;
     box-shadow: none;
-    border: none;
+    border: 2px solid var(--bs-secondary);
     margin-bottom: 35px;
+    transition: .4s all;
 }
 
 .callback-form .contact-form input:focus {
     outline: none;
-    box-shadow: none;
-    border: none;
+    box-shadow: var(--bs-secondary) 0px 10px 15px -3px, var(--bs-secondary) 0px 4px 6px -2px;
 }
 
 .callback-form .contact-form textarea {
@@ -1180,19 +1180,19 @@ button[aria-expanded^="true"] i {
     max-height: 200px;
     min-height: 120px;
     display: inline-block;
-    padding: 15px;
+    padding: 13px;
     color: #6a6a6a;
     font-size: 13px;
     text-transform: none;
     box-shadow: none;
-    border: none;
+    border: 2px solid var(--bs-secondary);
     margin-bottom: 35px;
+    transition: .4s all;
 }
 
 .callback-form .contact-form textarea:focus {
     outline: none;
-    box-shadow: none;
-    border: none;
+    box-shadow: var(--bs-secondary) 0px 10px 15px -3px, var(--bs-secondary) 0px 4px 6px -2px;
 }
 
 .callback-form .contact-form ::-webkit-input-placeholder { /* Edge */
@@ -1208,25 +1208,23 @@ button[aria-expanded^="true"] i {
 }
 
 .callback-form .contact-form button.border-button {
-    background-color: transparent;
     color: #fff;
-    border: 2px solid #fff;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 10px 28px;
-    border-radius: 30px;
-    display: inline-block;
-    transition: all 0.3s;
+    border: 3px solid var(--bs-secondary);
+    background-image: -webkit-linear-gradient(30deg, var(--bs-secondary) 50%, transparent 50%);
+    background-image: linear-gradient(30deg, var(--bs-secondary) 50%, transparent 50%);
+    background-size: 500px;
     outline: none;
-    box-shadow: none;
-    text-shadow: none;
-    cursor: pointer;
+    border-radius: 30px;
+    padding: 7px 25px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
 }
 
 .callback-form .contact-form button.border-button:hover {
-    background-color: #fff;
-    color: var(--bs-primary);
+    background-position: 100%;
+    color: var(--bs-secondary);
 }
 
 .contact-us .contact-form button.filled-button {
