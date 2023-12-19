@@ -120,7 +120,7 @@ input[type=number] {
 }
 
 .bg-gray {
-    background-color: #131720 !important;
+    background-color: var(--bs-primary) !important;
 }
 
 .self-absolute {
@@ -945,9 +945,8 @@ ul.slick-dots {
 }
 
 button[aria-expanded^="true"] i {
-    background-color: var(--bs-primary) !important;
+    background-color: var(--bs-black) !important;
     transform: rotate(-180deg) !important;
-    color: black !important;
 }
 
 .service-item .down-content h4 {
